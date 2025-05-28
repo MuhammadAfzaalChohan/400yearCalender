@@ -1,0 +1,11 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+    <servlet>
+        <servlet-name>CalendarServlet</servlet-name>
+        <servlet-class>com.calendar.CalendarServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>CalendarServlet</servlet-name>
+        <url-pattern>/CalendarServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
