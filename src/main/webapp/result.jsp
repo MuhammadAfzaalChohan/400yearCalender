@@ -11,7 +11,7 @@
         String error = (String) request.getAttribute("error");
         if (error != null) {
     %>
-        <p style="color: red;"><%= error %></p>
+        <p style="color: rgb(36, 206, 21);"><%= error %></p>
         <a href="index.jsp">Try Again</a>
     <%
         } else {
@@ -21,7 +21,7 @@
             String dayOfWeek = (String) request.getAttribute("dayOfWeek");
     %>
         <p><strong>Date:</strong> <%= year %>-<%= String.format("%02d", month) %>-<%= String.format("%02d", day) %></p>
-        <p><strong>Day of the Week:</strong> <%= dayOfWeek %></p>
+        <p>\<><em><strong>Day of the Week:</strong></em> <%= dayOfWeek %></p>
         <a href="index.jsp">Try Another Date</a>
     <%
         }
