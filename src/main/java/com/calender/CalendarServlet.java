@@ -23,7 +23,7 @@ public class CalendarServlet extends HttpServlet {
             int day = Integer.parseInt(request.getParameter("day"));
 
             if (year < 1800 || year > 2200) {
-                request.setAttribute("error", "Year must be between 1800 and 2200.");
+                request.setAttribute("error", "Year should be between 1800 and 2200.");
             } else {
                 String dayOfWeek = DateUtils.getDayOfWeek(year, month, day);
                 request.setAttribute("dayOfWeek", dayOfWeek);
@@ -34,7 +34,7 @@ public class CalendarServlet extends HttpServlet {
             request.setAttribute("day", day);
 
         } catch (Exception e) {
-            request.setAttribute("error", "Invalid input.");
+            request.setAttribute("error", "Not valid input.");
         }
 
         RequestDispatcher rd = request.getRequestDispatcher("result.jsp");
