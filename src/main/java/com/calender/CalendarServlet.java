@@ -34,7 +34,7 @@ public class CalendarServlet extends HttpServlet {
             request.setAttribute("day", day);
 
         } catch (Exception e) {
-            request.setAttribute("error", "Not valid input.");
+            request.setAttribute("error", "Non-valid input.");
         }
 
         RequestDispatcher rd = request.getRequestDispatcher("result.jsp");
