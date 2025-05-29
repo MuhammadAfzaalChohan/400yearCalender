@@ -11,7 +11,7 @@
         String error = (String) request.getAttribute("error");
         if (error != null) {
     %>
-        <p style="color: rgb(36, 206, 21);"><%= error %></p>
+        <p style="color: rgb(216, 108, 7);"><%= error %></p>
         <a href="index.jsp">Try Again</a>
     <%
         } else {
